@@ -1,0 +1,134 @@
+#Create Simple Strings
+name = "Rahul"
+Course = "Python for Gen AI"
+City = "Plano"
+print(name)
+print(Course)
+print(City)
+
+#Task 2: Combine Strings
+first_name="Kesari"
+last_name="Patil"
+print(first_name, last_name)
+
+#Task 3: String Length
+message="Python is powerful"
+print(len(message))
+
+#Task 4: Print Multiple Values
+name="Kesari"
+age=37
+course="Genai" 
+print (f"My name is {name}.I am {age} Year Old.I am learning {course}.")
+
+#Task 5: Use f-string Formatting
+student = "Kesari"
+language ="Python"
+print(f"student {student} is learning {language}.")
+
+#Task 6: Use .format() Method
+server = "web01"
+ip = "192.168.1.10"
+print("Server {} has IP address {}".format(server,ip))
+
+#Task 7: Print DevOps Style Output
+service = "nginx"
+status = "running"
+port = 80
+print(f"Service {service} is {status} on port {port}")
+
+#Task 8: Access Characters Using Positive Indexing
+word = "Python"
+print(f"{word[0]} \n{word[1]}\n{word[2]}")
+
+# Task 9: Access Characters Using Negative Indexing
+word ="Python"
+print(f"{word[-1]} \n{word[-2]} \n{word[-3]}")
+
+#Task 10: First and Last Character
+tool = "Kubernetes"
+print(tool[0])
+print(tool[-1])
+
+##String Slicing
+#Task 11: Basic Slicing
+language = "Python"
+print(language[0:2])
+print(language[2:6])
+print(language[:3])
+print(language[3:])
+
+#Task 12: Slice a DevOps String
+server_name = "prod-web-server-01"
+print(server_name[0:4])
+print(server_name[5:8])
+print(server_name[9:15])
+print(server_name[-2:19])
+
+#Task 13: Reverse a String
+word = "Linux"
+print(word[::-1])
+
+word="Kesari"
+print(word[::-1])
+
+#Part 5: Practice Problems
+# Task 14: Extract Username from Email
+email = "kesarishankarpatil@gmail.com"
+at =email.find("@")
+username = email[:at]
+print(username)
+
+#Task 15: Extract Domain from Email
+domain=email[at+1:]
+print(domain)
+
+#Task 16: Extract File Extension
+
+filename="backup.tar.gz"
+parts=filename.split(".")
+print(parts[2])
+
+#Task17: Format Server Information
+hostname="app-server-01"
+ip_address="10.0.0.15"
+environment="production"
+print(f"Hostname = {hostname} \nIP address = {ip_address} \nEnvironment = {environment}")
+
+#Task 18: Indexing Challenge
+platform = "OpenShift"
+print(platform[0])
+print(platform[4])
+print(platform[-1])
+
+# Part 6: Mini Assignment
+#Task 19: Student Profile Generator
+
+name = "Amit"
+course = "Python for DevOps"
+duration = "2 months"
+institute = "Network Nuts"
+print(f"Name:{name} \nCourse:{course} \nDuration:{duration} \nInstitute:{institute}")
+
+# Infrastructure Name Parser
+resource = "prod-db-server-02"
+parts=resource.split("-")
+print(f"Environmemnt: {parts[0]} \nService: {parts[1]} \nType: {parts[2]} \nNumber: {parts[3]}")
+
+#Bonus Tasks
+#Bonus Task 1: Count Characters
+
+sentence = "Python is used in DevOps automation"
+print(len(sentence))
+
+##Bonus Task 2: Print Initials
+first_name = "Rohit"
+middle_name = "Kumar"
+last_name = "Sharma"
+print(first_name[0], middle_name[0], last_name[0],sep=".")
+
+#Bonus Task 3: Mask Email
+email= "kesari@gmail.com"
+at=email.find("@")
+print(email[0]+"*"*(at-1)+email[at:])
+print(email[0]+"*"*(at-1)+email[at:])

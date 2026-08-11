@@ -1,0 +1,8 @@
+#Create Simple Strings
+name = "Rahul"
+Course = "Python for Gen AI"
+City = "Plano"
+print(name)
+print(Course)
+print(City)
+
